@@ -1,0 +1,70 @@
+target_id: reciprocal-mittag-leffler-near-two
+search_date: 2026-11-02
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    There exist delta>0 and a real analytic b on (2-delta,2+delta), with
+    b(2)=3, such that for every real alpha with |alpha-2|<delta and every
+    beta>0, 1/E_{alpha,beta}(s) is completely monotone for s>0 if and only
+    if 0<beta<=b(alpha). Throughout this interval the normalised logarithm
+    log(Gamma(beta)E_{alpha,beta}(s)) is Bernstein and has a Levy density
+    g(t)/t with g(t)>0 and g'(t)<0. Every positive reciprocal power is the
+    Laplace transform of a self-decomposable probability law. The boundary
+    is defined by a double zero near -4*pi^2 and has derivative
+    b'(2)=1+pi*Si(2*pi)/integral_0^{2*pi}((1-cos(u))/u)du.
+  exclusions:
+    - No numerical value of delta is certified.
+    - No full classification for alpha bounded away from 2 is claimed.
+    - No claim that all complex zeros are real throughout this region.
+    - No resolution of the separate complete-Bernstein/global-modulus conjecture.
+    - beta=0 is an analytic anchor, not part of the probability theorem.
+    - Historical priority is not established by negative searches.
+source:
+  originating_reference: "Garrappa, Gerhold, Popolizio and Simon (2025), Conjecture 25, arXiv v4; Conjecture 24 in v3"
+  url: "https://arxiv.org/html/2410.11852v4"
+normalisation:
+  indices: "E_{alpha,beta}(z)=sum_{n>=0} z^n/Gamma(alpha*n+beta)"
+  scaling: "H=Gamma(beta)E, so H(0)=1; reciprocal argument is +s"
+  basis_order: "Not applicable: scalar entire functions"
+  symmetries: ["complex conjugation for real parameters"]
+sequences:
+  - name: "E_{2,2} coefficients, n=0..6"
+    exact_values: ["1", "1/6", "1/120", "1/5040", "1/362880", "1/39916800", "1/6227020800"]
+    natural_scalings: ["multiply by (2n+1)! to obtain 1"]
+  - name: "1/E_{2,2} coefficients, n=0..6"
+    exact_values: ["1", "-1/6", "7/360", "-31/15120", "127/604800", "-73/3421440", "1414477/653837184000"]
+    natural_scalings: ["absolute values match x/sin(x), with z=x^2"]
+  - name: "1/(2E_{2,3}) coefficients, n=0..6"
+    exact_values: ["1", "-1/12", "1/240", "-1/6048", "1/172800", "-1/5322240", "691/118879488000"]
+    natural_scalings: ["(sqrt(z)/2 / sinh(sqrt(z)/2))^2"]
+generating_functions:
+  - name: "general normalised entire function"
+    expression: "Gamma(beta)*sum_{n>=0} z^n/Gamma(alpha*n+beta)"
+    variables: [z, alpha, beta]
+  - name: "elementary anchor at (2,2)"
+    expression: "sinh(sqrt(z))/sqrt(z)"
+    variables: [z]
+  - name: "elementary anchor at (2,3)"
+    expression: "2*(cosh(sqrt(z))-1)/z"
+    variables: [z]
+  - name: "unnormalised anchor at (2,0)"
+    expression: "sqrt(z)*sinh(sqrt(z))"
+    variables: [z]
+matrices: []
+aliases:
+  analysis: ["reciprocal complete monotonicity", "logarithmically completely monotone", "Bernstein logarithm", "Mittag-Leffler zeros", "double-zero boundary", "Pringsheim theorem"]
+  probability: ["infinitely divisible Laplace transform", "self-decomposable distribution", "Levy spectral function", "first passage time", "van Dantzig pair"]
+  combinatorics: ["nonnegative reciprocal Taylor coefficients", "dominant singularity", "Vivanti-Pringsheim"]
+  mathematical_physics: ["spectral determinant", "heat trace", "Lee-Yang property", "Laguerre-Polya class"]
+  statistics_optimisation_ml: ["positive Laplace mixtures", "completely monotone kernels"]
+known_invariants:
+  order: "1/alpha"
+  logarithmic_derivative: "p*z^(p-1)-q/z+exponentially small error; p=1/alpha, q=(beta-1)/alpha"
+  small_time_kernel: "p/Gamma(1-p)*t^(-p)-q+exponentially small error"
+  anchor_zeros_2_2: "-pi^2*n^2, simple, n>=1"
+  anchor_zeros_2_3: "-4*pi^2*n^2, double, n>=1"
+  anchor_zeros_2_0: "0 and -pi^2*n^2, all simple"
+  boundary_slope: "2.827681731104280866705425238445148693..."
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: ["two live web search engines", "arXiv", "Numdam", "author-hosted/author-uploaded primary papers", "publisher records", "OEIS for anchor fingerprint only"]

@@ -1,0 +1,17 @@
+title: Reciprocal Mittag-Leffler lower-parameter extension
+date: 2026-11-02
+statement: For every real 1<a<2 and 0<=b<=a, 1/E_{a,b}(q) is completely monotone for all q>0. For b>0 all positive powers of 1/[Gamma(b)E_{a,b}(q)] are completely monotone.
+normalisation: E_{a,b}(q)=sum_{n>=0} q^n/Gamma(an+b), with 1/Gamma(0)=0.
+source: Garrappa-Gerhold-Popolizio-Simon 2025 arxiv 2410.11852v4 Proposition 3 and Conjecture 25
+success_unit: proof and positive-parameter refutation of conjectured necessity
+new_region: 1<a<2 and 0<b<a-1
+exclusions: No full classification for b>a; no proof of global complex modulus conjecture; no historical-priority assertion.
+small_instances:
+  - [a=3/2, b=1/4, seed_g=5/4]
+  - [a=4/3, b=1/6, seed_g=7/6]
+  - [a=7/4, b=1/2, seed_g=3/2]
+recurrence: E_{a,b}=b E_{a,b+1}+a q E'_{a,b+1}
+aliases: [Bernstein function, complete monotonicity, self-decomposable hitting time, Euler differential operator, parameter shift, spectrally negative positive self-similar Markov process]
+generating_function: Intrinsically entire special-function family, not rational/algebraic.
+finite_matrix_fingerprint: Not applicable.
+gate: BOUNDED UNCERTAINTY pending fuller literature and independent mathematical review.

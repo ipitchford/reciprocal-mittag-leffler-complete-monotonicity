@@ -1,0 +1,79 @@
+{
+  "title": "Reciprocal Mittag-Leffler functions: complete monotonicity below the parameter band, and the exact boundary near order two",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> In one sentence: the reciprocal 1/E<sub>&alpha;,&beta;</sub> of the two-parameter Mittag-Leffler function is completely monotone on a strictly larger parameter set than Garrappa, Gerhold, Popolizio and Simon (2025, Conjecture 25) proposed, so their parameter band [&alpha;-1, &alpha;] is not necessary.</p><p><strong>Theorem A.</strong> For every 1 &lt; &alpha; &lt; 2 and 0 &lt; &beta; &le; &alpha;, log[&Gamma;(&beta;)E<sub>&alpha;,&beta;</sub>] is a Bernstein function, so every positive power of the normalised reciprocal is the Laplace transform of an infinitely divisible probability law. This covers the whole triangle 0 &lt; &beta; &lt; &alpha;-1 below the band. The proof combines a dilation-ratio identity contained in the proof of the authors' Proposition 3 with the recurrence E<sub>&alpha;,&beta;</sub> = &beta;E<sub>&alpha;,&beta;+1</sub> + &alpha;zE'<sub>&alpha;,&beta;+1</sub>.</p><p><strong>Theorem B.</strong> For &alpha; in a two-sided neighbourhood of 2 the admissible set is exactly (0, b(&alpha;)], where b is real analytic, b(2) = 3, and b'(2) = 1 + 2&pi; Si(2&pi;)/(2I(2&pi;)) = 2.8276817311..., with I(a) the integral of (1-cos u)/u over (0,a). The boundary is where two negative zeros near -4&pi;<sup>2</sup> collide; the associated laws are self-decomposable. So the band also fails above for &alpha; just below 2. A 40-digit numerical continuation of the boundary curve over 1.5 &le; &alpha; &le; 2.5 supports a replacement conjecture; an exact rational certificate exhibits a failure of the global modulus inequality at (&alpha;, &beta;, z) = (3/2, 1/4, -60+i).</p><p>Limits: the neighbourhood in Theorem B is not quantified and no specific parameter pair above the band is certified; the equivalence of the band with the global modulus inequality is not addressed; two inputs are cited (the hitting-time construction of Garrappa et al. and the order-two zero theorem). The archive contains the manuscript (PDF and Markdown source), verify.py with three finite checks and a negative control (valid under python -O), their retained outputs, novelty reports, a public review record and SHA-256 sums. Assurance: written proofs; internal AI-assisted review only (not human peer review, independent reproduction or formal verification). Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-zero",
+  "version": "0.1.0-candidate",
+  "publication_date": "2026-11-04",
+  "keywords": [
+    "Mittag-Leffler function",
+    "complete monotonicity",
+    "Bernstein function",
+    "infinite divisibility",
+    "self-decomposability",
+    "entire functions",
+    "zeros",
+    "special functions"
+  ],
+  "notes": "Code (verify.py, code/ and the CI workflow) is MIT; prose, manuscript and data are CC0-1.0. Bibliographic records in refs/ are factual metadata from Crossref.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/reciprocal-mittag-leffler-complete-monotonicity/tree/v0.1.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/reciprocal-mittag-leffler-complete-monotonicity/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1016/j.jmaa.2025.129588",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/08-AIHP182",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10476-021-0088-4",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5802/aif.3600",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1017/CBO9780511801655",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1515/9783110269338",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.2139/ssrn.7277540",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2410.11852",
+      "relation": "references",
+      "scheme": "arxiv"
+    }
+  ],
+  "doi": "10.5281/zenodo.23934934"
+}

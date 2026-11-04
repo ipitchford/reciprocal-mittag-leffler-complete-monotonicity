@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Reciprocal Mittag-Leffler functions: complete monotonicity below the parameter band, and the exact boundary near order two"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23934934
+date-released: 2026-11-04
+repository-code: "https://github.com/ipitchford/reciprocal-mittag-leffler-complete-monotonicity"
+url: "https://evidencepress.org/releases/reciprocal-mittag-leffler-complete-monotonicity/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23934934
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23934933
+    description: "Concept DOI (all versions)"
+keywords:
+  - Mittag-Leffler function
+  - complete monotonicity
+  - Bernstein function
+  - infinite divisibility
+  - special functions
+abstract: "For 1<alpha<2 and 0<beta<=alpha, log[Gamma(beta)E_{alpha,beta}] is a Bernstein function, so 1/E_{alpha,beta} is completely monotone on the whole triangle below the band [alpha-1,alpha] proposed in Conjecture 25 of Garrappa, Gerhold, Popolizio and Simon (2025). Near alpha=2 the admissible set is exactly (0,b(alpha)] with b analytic, b(2)=3, b'(2)=1+2pi Si(2pi)/(2 I(2pi))=2.82768..., so the band also fails above. Numerical boundary curve and replacement conjecture; exact certificate of a modulus-inequality failure. Unrefereed candidate; internal AI-assisted review only. Text CC0-1.0; code MIT."

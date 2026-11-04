@@ -1,0 +1,52 @@
+{
+ "status": "all checks passed",
+ "checks": {
+  "boundary_tangent": [
+   "Exact reciprocal series at (2,2), degrees 0..6: 1, -1/6, 7/360, -31/15120, 127/604800, -73/3421440, 1414477/653837184000",
+   "Exact reciprocal series at (2,3), degrees 0..6: 1, -1/12, 1/240, -1/6048, 1/172800, -1/5322240, 691/118879488000",
+   "Exact gamma-ratio polynomial identity: PASS (7 rational evaluations)",
+   "Anchor kernel integrals: (2,2) = 1/6; (2,3) = 1/12 (zeta(2) identity).",
+   "Decimal working precision: 90; Mittag--Leffler terms: 151; integral terms: 150/151.",
+   "I(2pi) = 2.4376533930572244118107103414366841444123243310161139570",
+   "Si(2pi) = 1.4181515761326284502457801622997494291424533492950162718",
+   "partial_beta E = 0.0617464817735797030375322568988971256331019115756070063",
+   "partial_alpha E = -0.1745993984711147813869948041372633002417933052757319376",
+   "bprime(2) = 2.8276817311042808667054252384451486930361139985333835948",
+   "Maximum agreement error: 1.31E-87",
+   "Parameter cap M = 4.3722813232690143299253057",
+   "High-precision slope and derivative consistency: PASS",
+   "LIMIT: no interval arithmetic, no certified parameter neighbourhood, no proof-assistant verification."
+  ],
+  "modulus_certificate": [
+   "pi: [3.141592653589793238462643, 3.141592653589793238462644]",
+   "Gamma(1/4): [3.625609908221908311930685, 3.625609908221908311930686]",
+   "E_{3/2,1/4}(-60): [0.001334876721003980608130, 0.001334876721003980608131]",
+   "Re E_{3/2,1/4}(-60+i): [0.001265716319754666274619, 0.001265716319754666274620]",
+   "Im E_{3/2,1/4}(-60+i): [0.000377885971897139387412, 0.000377885971897139387413]",
+   "E(-60)^2 - |E(-60+i)|^2: [0.000000037060250428396864, 0.000000037060250428396865]",
+   "PASS: exact rational enclosures prove E(-60)>0 and squared gap >3e-8.",
+   "PASS: both analytic series tails are bounded by 10^-240.",
+   "This finite certificate does not prove the unrestricted complete-monotonicity theorem."
+  ],
+  "boundary_curve": [
+   "closed-form b'(2) = 2.8276817311042808667",
+   "central difference = 2.82768257831",
+   "1.5 1.79365189244 -11.4046216877",
+   "1.6 2.00191458921 -14.0359802963",
+   "1.7 2.2266021027 -17.6833772409",
+   "1.8 2.46779722321 -22.7267885652",
+   "1.9 2.72557483742 -29.721861205",
+   "2.01 3.02836034427 -40.6474407955",
+   "2.11 3.32116149752 -54.8278337991",
+   "2.21 3.63071671022 -74.9046601432",
+   "2.31 3.95706471659 -103.546815372",
+   "2.41 4.30023811913 -144.720855258",
+   "2.5 4.62350271079 -197.337828156",
+   "PASS: continuation consistent with exact tangent; b(alpha)>alpha on computed alpha<2.",
+   "curve sha256 e588e5a08ced152bc857dffbc1156a3639e9cad6d01d71155f5f95c2f646424a"
+  ],
+  "negative_control": [
+   "corrupted coefficient 7/360 -> 7/361 rejected (nonzero exit)"
+  ]
+ }
+}

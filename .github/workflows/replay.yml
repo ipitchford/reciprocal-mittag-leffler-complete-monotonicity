@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    name: verify.py with and without -O (blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python -m pip install -r requirements.txt
+      - name: verify.py with and without -O (explicit checks, no assert)
+        run: |
+          python -I -B -O verify.py --output "$RUNNER_TEMP/out_O.json"
+          python -I -B verify.py --output "$RUNNER_TEMP/out.json"
+      - name: Compare with the shipped verification_results.json
+        run: |
+          cmp "$RUNNER_TEMP/out_O.json" verification_results.json
+          cmp "$RUNNER_TEMP/out.json" verification_results.json
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

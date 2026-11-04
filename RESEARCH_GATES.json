@@ -1,0 +1,147 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the two dated novelty reports of the merged drafts (2 November 2026), a citation search during internal review (4 November 2026) and the reference retrieval of 4 November 2026. It documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Theorem A: for 1<alpha<2 and 0<beta<alpha-1, log[Gamma(beta)E_{alpha,beta}] is Bernstein (the band case is GGPS25 Remark 4(a)).",
+   "unit": "statement",
+   "paperLocation": "Theorem A; Section 2",
+   "searches": [
+    {
+     "date": "2026-11-02",
+     "corpus": "web search engines, arXiv, publisher pages, Numdam full texts (novelty_report_boundary.md, novelty_report_lower_parameter.md)",
+     "query": "reciprocal Mittag-Leffler complete monotonicity; Bernstein logarithm Mittag-Leffler; zeros of E_{2,beta} near beta=3; Garrappa Gerhold Popolizio Simon Conjecture 25; boundary slope fingerprints"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Semantic Scholar citations of arXiv:2410.11852 and web search (internal domain review)",
+     "query": "works citing Garrappa et al. 2025; follow-ups to Conjecture 25"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "api.crossref.org and export.arxiv.org",
+     "query": "registry records for every bibliography entry (refs/crossref_records.jsonl)"
+    }
+   ],
+   "closestPriorWork": "Garrappa, Gerhold, Popolizio and Simon 2025, Proposition 3 and Remark 4(a) (band only); Patie 2009 (beta=alpha)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem B: for alpha near 2, C_alpha=(0,b(alpha)], b analytic, b(2)=3, with self-decomposable laws.",
+   "unit": "statement",
+   "paperLocation": "Theorem B; Sections 3-9",
+   "searches": [
+    {
+     "date": "2026-11-02",
+     "corpus": "web search engines, arXiv, publisher pages, Numdam full texts (novelty_report_boundary.md, novelty_report_lower_parameter.md)",
+     "query": "reciprocal Mittag-Leffler complete monotonicity; Bernstein logarithm Mittag-Leffler; zeros of E_{2,beta} near beta=3; Garrappa Gerhold Popolizio Simon Conjecture 25; boundary slope fingerprints"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Semantic Scholar citations of arXiv:2410.11852 and web search (internal domain review)",
+     "query": "works citing Garrappa et al. 2025; follow-ups to Conjecture 25"
+    }
+   ],
+   "closestPriorWork": "GGPS25 Remark 4(b) (all-negative zeros give CM; alpha>=2, beta<=2alpha-1) and the alpha=2 characterisation of inequality (1.4)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Exact tangent b'(2)=1+a Si(a)/(2I(a)), a=2pi.",
+   "unit": "statement",
+   "paperLocation": "Section 10",
+   "searches": [
+    {
+     "date": "2026-11-02",
+     "corpus": "web search engines, arXiv, publisher pages, Numdam full texts (novelty_report_boundary.md, novelty_report_lower_parameter.md)",
+     "query": "reciprocal Mittag-Leffler complete monotonicity; Bernstein logarithm Mittag-Leffler; zeros of E_{2,beta} near beta=3; Garrappa Gerhold Popolizio Simon Conjecture 25; boundary slope fingerprints"
+    }
+   ],
+   "closestPriorWork": "None found (literal numerical-slope search)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Numerical boundary curve on [1.5,2.5] and Conjecture 12.1.",
+   "unit": "method",
+   "paperLocation": "Section 12",
+   "searches": [
+    {
+     "date": "2026-11-02",
+     "corpus": "web search engines, arXiv, publisher pages, Numdam full texts (novelty_report_boundary.md, novelty_report_lower_parameter.md)",
+     "query": "reciprocal Mittag-Leffler complete monotonicity; Bernstein logarithm Mittag-Leffler; zeros of E_{2,beta} near beta=3; Garrappa Gerhold Popolizio Simon Conjecture 25; boundary slope fingerprints"
+    }
+   ],
+   "closestPriorWork": "None found",
+   "verdict": "new-in-bounded-search"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Garrappa, Gerhold, Popolizio and Simon, JMAA 551 (2025) 129588, arXiv:2410.11852v4",
+   "usedFor": "Conjecture 25, Proposition 3 proof (hitting-time identity), Remark 4, Proposition 14",
+   "readWhat": "Sections 1-2 and 4 of the arXiv v4 HTML",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Lemma 2.2 and Section 11.1"
+  },
+  {
+   "citation": "Patie, Ann. IHP Probab. Stat. 45 (2009) 667-684",
+   "usedFor": "Diagonal case beta=alpha",
+   "readWhat": "Section 4.2.1 and Corollaries 4.1-4.2 (Numdam PDF)",
+   "date": "2026-11-02",
+   "evidenceLocator": "novelty_report_boundary.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "The neighbourhood of alpha=2 in Theorem B is not quantified; no pair above the band is certified.",
+   "closingQuestion": "Can kernel positivity on the middle time range be interval-certified at, e.g., (1.99, 2)?",
+   "triedOrSearched": "Considered in the revision round; numerical curve added instead.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Requires certified Laplace inversion.",
+   "whyNotClosedNow": "Beyond the revision budget."
+  },
+  {
+   "limitation": "Classification away from alpha=2 (Conjecture 12.1) and the band <=> modulus-inequality leg of Conjecture 25 remain open.",
+   "closingQuestion": "Does the double-zero branch continue and remain the CM boundary on (1,2)?",
+   "triedOrSearched": "Numerical continuation over 1.5<=alpha<=2.5.",
+   "estimatedCost": "months",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Priority holds only within a bounded search; Polson (2026, SSRN) read at abstract level only.",
+   "closingQuestion": "Does the Polson preprint state either theorem?",
+   "triedOrSearched": "Full text inaccessible on 2 and 4 November 2026.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Access.",
+   "whyNotClosedNow": "Full text not available."
+  },
+  {
+   "limitation": "Finite checks cover formulas, one certificate and numerics, not the theorems.",
+   "closingQuestion": "Do the checks fail when a constant is corrupted, including under python -O?",
+   "triedOrSearched": "Explicit checks; negative control in verify.py.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, November 2026",
+  "date": "2026-11-04",
+  "proposals": [
+   "Numerical boundary curve b(alpha)",
+   "Certified upper-side pair or explicit delta",
+   "Self-decomposability below the band away from 2",
+   "Global classification on (1,2)"
+  ],
+  "actions": [
+   "Numerical boundary curve and Conjecture 12.1 added (Section 12)",
+   "Others recorded as limitations"
+  ]
+ }
+}
